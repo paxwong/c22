@@ -91,22 +91,26 @@ for (let key in hk) {
 
     let newData = {}
     let checkObj = hk[key][0]
-    let checkObj2 = hk[key][1]
     let result = ""
+    
     if (Array.isArray(hk[key]) && !(checkObj instanceof Object)) {
         for (let str of hk[key]) {
             if (!result) {
                 result = str
             } else result = result + ", " + str
         } console.log(`${key}: ${result}`)
+
     } else if (Array.isArray(hk[key]) && (checkObj instanceof Object)) {
-        for (let newKey in checkObj) {
-            console.log(`${key}_${newKey}: ${checkObj[newKey]}`) 
+        for (let newKey of hk[key]) {
+            for (let subNewKey in newKey)
+            console.log(`${key}_${subNewKey}: ${newKey[subNewKey]}`) 
         }
+
     } else if (hk[key] instanceof Object) {
         for (let subKey in hk[key]) {
             console.log(`${key}_${subKey}: ${hk[key][subKey]}`)
         }
+
     } else {
         console.log(`${key}: ${hk[key]}`)
     }

@@ -67,3 +67,5 @@ let cards5 = cards.map(function(card){
     } else {return card}
 })
 console.log(cards5)
+
+// console.log(cards)

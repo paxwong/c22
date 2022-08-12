@@ -1,0 +1,90 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.turn {
+    color: black;
+    line-height: 5vw;
+    font-size: 5vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.turn img {
+    width: 4.5%;
+    height: 4.5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-height: 99vw;
+    max-width: 99vh;
+    background-color: black;
+}
+
+.box {
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    max-width: 30vh;
+    max-height: 30vh;
+
+    border: 1vw dotted rgb(164, 255, 244);
+    border-width: 0.7vw;
+    margin: 1%;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    color: white;
+}
+
+img {
+    width: 70%;
+    height: 70%;
+}
+
+.restart {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    line-height: 5vw;
+    font-size: 3vw;
+}
+
+.feedback {
+    text-align: right
+}
+
+.upperContainer {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 20vw;
+    max-width: 100%;
+    background-color: black;
+}
+
+.turns {
+    color: white;
+    font-size: 3vw;
+    
+}
+
+.medium {
+    color: white;
+    font-size: 3vw;
+}

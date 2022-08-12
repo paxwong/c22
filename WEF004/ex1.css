@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+    --primary-green: #1bbcab;
+}
+* {
+    font-family: "Montserrat", sans-serif;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+footer {
+    text-align: right;
+    padding-right: 4rem;
+    color: gray;
+    font-style: italic;
+}
+section.game {
+    margin: 3rem;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+}
+.top-bar {
+    padding: 0.6rem;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.x-score-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 180px;
+    border: 1px solid #00000030;
+    border-radius: 13px;
+    margin: 0 1rem;
+}
+
+.o-score-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 180px;
+    border: 1px solid #00000030;
+    border-radius: 13px;
+    margin: 0 1rem;
+}
+
+[status = "active"] {
+    border-bottom: 3px solid var(--primary-green);
+    box-shadow: 0px 9px 20px 0px #8080805c;
+    border-top: none;
+    /* -webkit-box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.75); */
+}
+
+.score-box-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.turn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.restart-btn {
+    font-size: 24px;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: var(--primary-green);
+    font-weight: bold;
+}
+.restart-btn:hover {
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
+}
+
+/* Game Board Section */
+.game-board {
+    padding: 1rem 0;
+    background-color: var(--primary-green);
+}
+.box-container {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    height: 320px;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: #15a091;
+}
+.box-container .box {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: var(--primary-green);
+}
