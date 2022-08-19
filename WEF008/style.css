@@ -1,0 +1,48 @@
+/* #canvas{
+    position: relative;
+} */
+
+.button-container{
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+
+#canvas {
+    display:flex;
+    justify-content: center;
+}
+
+#reset-game {
+    height: 90px;
+    width: 300px;
+    border: 2px solid #8e8e8e;
+    margin: 0 100px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    left: 100%;
+    transform: translate(-105%,0); */
+    background-color: #000000;
+    color: white;
+    font-size: 3rem;
+}
+
+.play-pause {
+    height: 90px;
+    width: 300px;
+    border: 2px solid #8e8e8e;
+    margin: 0 100px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    left: 5%; */
+    /* transform: translate(-50%,0); */
+    background-color: #000000;
+    color: white;
+    font-size: 3rem;
+}

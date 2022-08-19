@@ -1,0 +1,17 @@
+a {
+    transition: all 0.5s;
+}
+
+a:hover {
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+/* 
+DOESNT WORK AS ONCLICK or CLICK is not a status
+a:onclick { 
+    background-color: blue;
+    color: yellow;
+    padding: 100px;
+} */

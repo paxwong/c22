@@ -6,9 +6,6 @@ let actives = document.querySelectorAll(".active")
 let active = document.querySelector(".active")
 let banner = document.querySelector("div.banner")
 let tabs = document.querySelectorAll(".tab")
-let button = document.querySelector(".button")
-let interesting = document.querySelector(".interesting")
-
 
 
 
@@ -62,9 +59,7 @@ function init() {
         })
     }
 
-    button.addEventListener("click", function (event) {
-    interesting.innerHTML = `<img class="fly" src="fly.png">`    
-})
+
 }
 
 init()
