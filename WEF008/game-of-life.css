@@ -1,0 +1,116 @@
+body {
+    background-color: #FEF5ED;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+#canvas {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons-container {
+    width: 100%;
+    height: 40px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.slider-container {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.framerate {
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 80%;
+    height: 15px;
+    border-radius: 0px;
+    background: #ADC2A9;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+    /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 10%;
+    background: #697969;
+    cursor: pointer;
+}
+
+.some-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    
+}
+.custom-button {
+    height: 60px;
+    width: 150px;
+    background-color: #99A799;
+    border: 1px solid #D3E4CD;
+    color: #363c36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; 
+    font-weight: bold;   
+    margin: 0.5rem;
+}
+
+.custom-button:hover {
+    background-color: #363c36;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.custom-button-2 {
+    height: 60px;
+    width: 150px;
+    background-color: #cccccc;
+    border: 1px solid #5b5b5b;
+    color: #5b5b5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem; 
+    font-weight: bold;   
+    margin: 0.5rem;
+}
+
+.custom-button-2:hover {
+    background-color: #363c36;
+    color: #cccccc;
+    cursor: pointer;
+}
+
+.active {
+    background-color:red;
+    color: paleturquoise;
+}
+
+.function-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
